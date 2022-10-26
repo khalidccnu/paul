@@ -1,0 +1,119 @@
+@media screen and (max-width: 1280px) {
+    /* ===== Common ===== */
+    body {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    /* ===== About ===== */
+    #about .row {
+        flex-direction: column;
+    }
+
+    #about .row .col:first-child {
+        width: 70%;
+    }
+
+    #about .row .col:last-child {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    /* ===== Process ===== */
+    #process .process-item {
+        width: 49%;
+    }
+
+    #process .process-item:nth-child(1) {
+        margin-bottom: 1%;
+    }
+
+    #process .process-item:nth-child(2) {
+        margin-right: 0;
+        margin-bottom: 1%;
+    }
+
+    #process .process-item:nth-child(3) {
+        margin-top: 1%;
+        margin-left: 0;
+    }
+
+    #process .process-item:nth-child(4) {
+        margin-top: 1%;
+    }
+
+    /* ===== Portfolio ===== */
+    .pf-area {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 580px) {
+    /* ===== Common ===== */
+    body {
+        font-size: 8px;
+    }
+
+    /* ===== Experience / Education ===== */
+    #ex-edu .container {
+        flex-direction: column;
+    }
+
+    #ex-edu .ex-area, #ex-edu .edu-area {
+        width: 100%;
+    }
+
+    #ex-edu .ex-area, #ex-edu .edu-area {
+        margin: 0;
+    }
+
+    #ex-edu .edu-area {
+        margin-top: 20px;
+    }
+
+    /* ===== Contact ===== */
+    #contact .container {
+        flex-direction: column;
+    }
+
+    #contact .ct-item {
+        width: 100%;
+    }
+
+    #contact .container .ct-item:first-child, #contact .container .ct-item:last-child {
+        margin: 0;
+    }
+
+    #contact .container .ct-item:last-child {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* ===== Process ===== */
+    #process .process-item {
+        width: 100%;
+        margin: 0;
+    }
+
+    #process .process-item:nth-child(1) {
+        margin-bottom: 1%;
+    }
+
+    #process .process-item:nth-child(2), #process .process-item:nth-child(3) {
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+    #process .process-item:nth-child(4) {
+        margin-top: 1%;
+    }
+
+    /* ===== Portfolio ===== */
+    .pf-area {
+        grid-template-columns: 1fr;
+    }
+}
